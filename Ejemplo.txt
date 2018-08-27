@@ -1,0 +1,50 @@
+Pruebas Realizadas!!
+
+*********************************************************
+Jugador 1:	[cebolla,vara,salto]
+
+postas_directas([cebolla,vara,salto],Resultado).
+->[correr, tomate, canto]
+
+anteriores(crema,[cebolla,vara,salto]).
+->[correr,pintura]
+
+*********************************************************
+Jugador 2:	[cebolla,vara,salto,tomate,correr,canto]
+
+
+postas_directas([cebolla,vara,salto,tomate,correr,canto],Resultado).
+->[pintura, bala]
+
+anteriores(tiro,[cebolla,vara,salto,tomate,correr,canto]).
+->[pintura,bala,fuerza,crema]
+
+*********************************************************
+
+Jugador 3:	[]
+
+postas_directas([],Resultado).
+->[salto, correr, cebolla, vara]
+
+anteriores(bala,[]).
+->[vara,cebolla,canto]
+
+*********************************************************
+
+Jugador 4:	[salto,vara]
+
+postas_directas([salto,vara],Resultado).
+->[correr, cebolla, tomate]
+
+anteriores(tiro,[salto,vara]).
+->[correr,pintura,cebolla,canto,bala,fuerza,crema,tomate]
+
+*********************************************************
+
+Jugador 5:	[salto,tomate,correr,pintura]
+
+postas_directas([salto,tomate,correr,pintura],Resultado).
+->[cebolla, vara, crema]
+
+anteriores(camino,[salto,tomate,correr,pintura]).
+->[vara,cebolla,canto,bala,fuerza,crema,tiro]
